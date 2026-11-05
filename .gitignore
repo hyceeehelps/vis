@@ -13,9 +13,11 @@ endcard.png
 badge.png
 vo[0-9]*.mp3
 
-# --- survival media: code lives in git, renders/audio do not ---
-survival/**/*.mp4
+# --- survival media: keep ONE small sample render, ignore scratch/heavy media ---
+survival/**/frames/
 survival/**/vo/
-survival/assets/voiceover_*.mp3
+survival/**/qc/
 survival/scenes/
 silent.mp4
+# the reference sample IS tracked on purpose (small, needed to review the merge):
+!survival/day2_demo/Farm_Survival_Day2_Part1.mp4
