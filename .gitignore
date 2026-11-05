@@ -12,6 +12,8 @@ title.png
 endcard.png
 badge.png
 vo[0-9]*.mp3
+# ...but the sample's per-beat narration is part of the deliverable:
+!sample_merge/vo/**
 
 # --- media rules: the MERGE SAMPLE is tracked on purpose (small, it is the deliverable);
 #     scratch render dirs and other episodes' audio/renders stay out of git ---
