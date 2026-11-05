@@ -1,7 +1,7 @@
 # 🔀 MERGE CHECK — Video Factory × Farm Survival
 
-**Verdict: possible, and already proven.** A working prototype of the merged pipeline exists in
-`survival/day2_demo/` — `Farm_Survival_Day2_Part1.mp4`, 22.37 s, **1080×1920 @30fps, H.264 CRF18 +
+**Verdict: possible, and already proven.** A working prototype of the merged pipeline exists in the `sample_merge/` folder
+`sample_merge/` — `Farm_Survival_Day2_Part1.mp4`, 22.37 s, **1080×1920 @30fps, H.264 CRF18 +
 AAC 44.1k stereo**, house `PART 1` amber badge, house title card, 2-word amber-highlight captions,
 brown-noise ambience, `+faststart`. It was produced by the *factory builder* from the *survival rig*,
 not by either project's original renderer.
@@ -38,7 +38,7 @@ Nothing in the factory's assembler assumes clipart, and nothing in the survival 
 3. **`survival/rig.py`** is the Day 2 renderer minus its timeline/encoder, with motion + framing added:
    `scene_panel(d, f, n, t)`, per-frame flame phases, idle bob, rain (with ground splashes), wind,
    ember flicker, `camera_look()` (down/up/left/right reframes), `env['zoom']`, cached backgrounds.
-4. **`survival/day2_demo/anim_part.py`** is an ordinary factory `anim_part.py` — `SCENES / PANELS /
+4. **`sample_merge/anim_part.py`** is an ordinary factory `anim_part.py` — `SCENES / PANELS /
    BEATS / NIGHT / CAP_CHUNK` — that points at the rig. **This is the whole merge contract: a part
    is a beat list + a panel config per beat.**
 5. **End-to-end build verified:** 6 beats, auto rate 1.000, badge, title, captions, ambience, mux.
@@ -92,6 +92,6 @@ squeezed to ≤49.9 s, then QC strip, then `upload.txt` in the house playbook (2
   recap funnel, 48–50 s pacing, captions, ambience, QC, metadata, retention rules).
 - **Avatar + POV from survival: yes, portable** — it becomes `rig.py` + a beat/panel table.
 - **Two real frictions:** the POV decision (§3.1) and the voice gate (§3.4). Everything else is already
-  wired and demonstrated in `survival/day2_demo/`.
+  wired and demonstrated in `sample_merge/`.
 - **Next step on your word:** render the rig natively at 1080×1920, then build a full 8-beat
   Day 3 part (≈49 s) the moment VO is available.

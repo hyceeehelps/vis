@@ -13,11 +13,12 @@ endcard.png
 badge.png
 vo[0-9]*.mp3
 
-# --- survival media: keep ONE small sample render, ignore scratch/heavy media ---
+# --- media rules: the MERGE SAMPLE is tracked on purpose (small, it is the deliverable);
+#     scratch render dirs and other episodes' audio/renders stay out of git ---
 survival/**/frames/
-survival/**/vo/
 survival/**/qc/
 survival/scenes/
+sample_merge/frames/
+sample_merge/qc/
+sample_merge/silent.mp4
 silent.mp4
-# the reference sample IS tracked on purpose (small, needed to review the merge):
-!survival/day2_demo/Farm_Survival_Day2_Part1.mp4

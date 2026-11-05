@@ -21,8 +21,10 @@ Panel keys consumed by rig.scene_panel():
   env     : {'rain':True,'wind':True,'embers':True,'rain_strength':1.0,'bob':px}
 """
 import sys, os
-sys.path.insert(0, '/home/user')
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)                      # repo root
+sys.path.insert(0, os.environ.get('FACTORY_ROOT', ROOT))
+sys.path.insert(0, os.path.join(ROOT, 'survival'))   # rig.py lives in survival/
 import rig                     # survival art + E avatar rig
 
 ART = rig                      # tells build_TEMPLATE this part renders full panels

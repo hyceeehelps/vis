@@ -13,9 +13,12 @@ Design notes, friction list and the demo verdict: **`../MERGE_PLAN.md`**.
 |---|---|
 | `rig.py` | The Day 2 renderer, art half only: `make_character()`, `background_portrait()`, `scene_frame_day2_portrait()`, the factory hook `scene_panel(d, f, n, t)`, camera reframes (`camera_look`), and motion layers (`env_overlay`: rain + splashes, wind, embers). |
 | `assets/` | E rig PNGs (1280×832 canvas: limbs, body, stem, faces, mouths), the barn doodle, and the Day 2 narration. |
-| `day2_demo/anim_part.py` | The merge contract: a normal factory `anim_part.py` (`SCENES / NIGHT / BEATS / CAP_CHUNK`) whose art comes from `rig.py` via a `PANELS` table. |
-| `day2_demo/build_p1.py` | A `build_TEMPLATE.py` copy with only the CONFIG block edited. |
-| `day2_demo/Farm_Survival_Day2_Part1.mp4` | Proof build: 22.37 s, 1080×1920 @30fps, H.264 CRF18 + AAC stereo, house badge + captions. |
+| `../sample_merge/anim_part.py` | The merge contract: a normal factory `anim_part.py` (`SCENES / NIGHT / BEATS / CAP_CHUNK`) whose art comes from `rig.py` via a `PANELS` table. |
+| `../sample_merge/build_p1.py` | A `build_TEMPLATE.py` copy with only the CONFIG block edited. |
+| `../sample_merge/Farm_Survival_Day2_Part1.mp4` | Proof build: 22.37 s, 1080×1920 @30fps, H.264 CRF18 + AAC stereo, house badge + captions. |
+
+The finished sample render lives one level up in **`../sample_merge/`** (its own folder, with its
+own README, beats, panel configs and narration clips).
 
 ## Build a part
 
@@ -24,8 +27,8 @@ Design notes, friction list and the demo verdict: **`../MERGE_PLAN.md`**.
 #    dict(pose=COLD, prop='broken', weather='dawn', look='down', env={'rain':True,'wind':True})
 # 2. vo/1/vo1.mp3 … vo/8/vo8.mp3  (one clip per beat — same as the factory)
 # 3. copy the template, edit CONFIG only, run it:
-cp ../build_TEMPLATE.py day3_demo/build_p1.py
-cd day3_demo
+cp ../build_TEMPLATE.py my_day3/build_p1.py   # then edit the CONFIG block only
+cd my_day3
 FACTORY_ROOT=/home/user/vis SURVIVAL_ASSETS=/home/user/vis/survival/assets \
   python build_p1.py
 ```
