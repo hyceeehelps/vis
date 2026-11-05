@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+# build scaffolding (frames/segs/qc/recap) stays out of git
+frames/
+seg_*.mp4
+qc/
+base.mp4
+list.txt
+recap.mp4
+title.png
+endcard.png
+badge.png
+vo[0-9]*.mp3
+
+# --- survival media: code lives in git, renders/audio do not ---
+survival/**/*.mp4
+survival/**/vo/
+survival/assets/voiceover_*.mp3
+survival/scenes/
+silent.mp4

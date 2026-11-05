@@ -1,0 +1,34 @@
+TC1 — Lindsay Clancy case SPECIAL (NON-QUEUE, user-directed Sept 6, 2026) (2 parts)
+PART 1: "The Case That Split a Jury" — BUILT + QC PASSED Sept 6, 2026.
+Final: The_Case_That_Split_a_Jury_Part1.mp4 (49.53s, h264 1080x1920@30, aac 44.1k)
+Voice: en-US-GuyNeural (stand-in of RECORD). Captions: ASR per word (vosk), 2-word. Badge: PART 1.
+TREATMENT (locked by agent boundary, user informed): house engine, white bg, but SOMBER —
+documentary props only (documents/courthouse/candles/symbols), NO depiction of the children,
+the act, or re-enactment; allegations language; no gags anywhere; no wry closer.
+CONFIG: OUT_BASE=The_Case_That_Split_a_Jury_Part1, PART_NUM=1, FINAL=False, BADGE=True,
+TITLE_LINES=['THE CASE THAT','SPLIT A JURY'], GAPS tail 1.2. natural=79.39s rate=1.637.
+SCENE NOTES (rebuild):
+1. Winter clouds, two simple houses, 'DUXBURY MASS.' sign post, JAN 2023 calendar page,
+   'A NURSE'S FAMILY' (title zone y330-540 clear).
+2. Phone w/ photo grid + drawn heart (NOT emoji — DejaVu lacks glyph), scribble 'ANXIETY' swarm,
+   'two stories'.
+3. '12+ Rx' + shelf of 6 Rx bottles + 4 larger ones, flipping calendar pages, '"help..."'.
+4. 'JANUARY 24 / 6:00 PM'; quiet house w/ gold porch light, grey car 'dinner run' leaving,
+   2 gulls. NOTHING ELSE — the act is not depicted, timeline carried by VO.
+5. 3 candles, names line at TOP y830 (kept clear of caption band after fix): 'Cora 5 · Dawson 3
+   · Callan 8 months'; CHARGES ×3 docket + red-cross medical card 'she survives — partially paralyzed'.
+6. Grey brain doodle 'one mind' + two docs 'POSTPARTUM PSYCHOSIS?' vs 'PLANNED? UNDERSTOOD?'
+   + balance scale.
+7. Quote doc '"FORGIVE HER… THE REAL HER / WASN'T THERE." — public letter' + mic stand,
+   'a nation argues'.
+8. CLIFF: courthouse 'JUSTICE' + columns + ajar door + JULY 2026 calendar + gavel; '. . .' held.
+BEATS (VO exactly):
+1. Duxbury, Massachusetts, January 2023. Lindsay Clancy, a labor and delivery nurse, and mother of three, is struggling after the birth of her third child.
+2. Online, her life looks picture-perfect, a beautiful home, three kids, a devoted husband. Behind the scenes, she is spiraling into severe anxiety.
+3. Doctors adjust her medications again and again, more than a dozen prescriptions within months. Her family says she never stopped asking for help.
+4. On January 24th, with her husband out picking up dinner, the unthinkable happens inside that quiet house.
+5. Cora was five, Dawson was three, and Callan was eight months old. Lindsay survives a suicide attempt, partially paralyzed, and is charged with three counts of murder.
+6. Her defense calls it postpartum psychosis, a rare break from reality after childbirth. Prosecutors insist she planned it, and knew exactly what she was doing.
+7. The case ignites a national debate about maternal mental health, and her husband publicly forgives her, saying the real Lindsay wasn't there that night.
+8. In July 2026, her trial finally begins, and the state promises the jury proof. Two armies of experts, one courtroom.
+P2: The_Trial_That_Could_Not_Decide_Part2.mp4 (this folder's sibling) — see its script.txt.

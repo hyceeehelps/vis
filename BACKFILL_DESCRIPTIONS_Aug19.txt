@@ -1,0 +1,82 @@
+🛠️ METADATA REPAIR KIT — Aug 19, 2026
+==================================================
+PROBLEM: on the newest uploads the whole upload block landed in the TITLE
+(so titles carry hashtags and descriptions are EMPTY).
+FIX per video (2 min each): Studio → Content → ✏️ pencil →
+  1. TITLE = the clean title below (delete everything after the 2nd emoji!)
+  2. DESCRIPTION = the description block below it (hashtags included)
+  3. Save. Then check the pinned comment is set.
+
+=== Aug 13 · Ep.14 P2 (Toledo finale) — 185 views ===
+TITLE: The War Whose Only Injury Was a Guy Named Two 😂🩹
+DESCRIPTION:
+In 1835, Ohio and Michigan faced off over Toledo — but the only injury came when a Michigan sheriff tried to arrest an Ohio settler named Two Stickney (his real, legal name) and got nicked by a pocket knife. The militias never fired a shot, President Jackson removed Michigan's Boy Governor, and Congress settled it in 1836: Ohio kept Toledo, Michigan got the "worthless" Upper Peninsula — which turned out to be full of copper and iron.
+
+It sounds unbelievable… but the Toledo War really happened, and the loser walked away rich.
+
+#ToledoWar #WeirdHistory #History #DidYouKnow #HistoryShorts #Shorts
+PIN: how it started 👀 on my profile
+
+=== Aug 13 · Ep.15 P1 — 1,101 views ===
+TITLE: London Smelled So Bad, Parliament Nearly Fled 🤢💩
+DESCRIPTION:
+In the summer of 1858, the River Thames had become an open sewer for two and a half million Londoners — and a brutal heatwave turned it into the Great Stink. The Houses of Parliament hung lime-soaked curtains over the windows, MPs threatened to abandon the building, and Queen Victoria's pleasure cruise reportedly turned back within minutes.
+
+It sounds unbelievable… but the Great Stink of 1858 really happened. And it ended up changing London forever.
+
+#GreatStink #WeirdHistory #History #DidYouKnow #HistoryShorts #Shorts
+PIN: wait until you see what London did about it… 🤢
+
+=== Aug 14 · Ep.15 P2 (Finale) — 638 views ===
+TITLE: They Fixed a River of Poop With 300 Million Bricks 🤢🧱
+DESCRIPTION:
+In 1858, London's "Great Stink" got so bad that Parliament hung lime-soaked curtains and the Queen abandoned a three-minute river cruise. Engineer Joseph Bazalgette answered with 82 miles of brick sewers — dug by hand, over 300 million bricks, 16 years of mud. The stink faded, cholera retreated, and his tunnels still run under London today.
+
+It sounds unbelievable… but Bazalgette's sewers are still carrying the city, more than a century and a half later.
+
+#GreatStink #WeirdHistory #History #DidYouKnow #HistoryShorts #Shorts
+PIN: how it started 👀 on my profile
+
+=== Aug 14 · Ep.16 P1 (Moon Hoax) — 256 views ===
+TITLE: A Newspaper Found Life on the Moon in 1835 🙂🌕
+DESCRIPTION:
+In August 1835, the New York Sun began printing "exclusive" reports: astronomer Sir John Herschel had supposedly pointed a giant new telescope at the Moon — and found lunar forests, sapphire rivers, horned bat-people building temples, unicorns, and beavers walking upright. New York lost its mind, the Sun became the best-selling newspaper on the planet, and readers started raising money to send missionaries to civilize the moon people.
+
+It sounds unbelievable… but the Great Moon Hoax really happened. And then one rival editor asked where the famous report actually was.
+
+#GreatMoonHoax #WeirdHistory #History #DidYouKnow #HistoryShorts #Shorts
+PIN: the creatures get so much weirder in part 2… 🦇
+
+=== Aug 14 · Ep.16 P2 (Finale) — 17 views ===
+TITLE: The Moon Hoax That Fooled the Whole World 😂📰
+DESCRIPTION:
+In 1835, the New York Sun's moon-creature stories made it the biggest paper on Earth — but rival editors demanded to see Sir John Herschel's original report. There wasn't one: the "discoveries" were invented by reporter Richard Adams Locke. The Sun never properly retracted the series, kept its new readers, and the hoax became one of the most famous in journalism history.
+
+It sounds unbelievable… but millions really believed in bat-people on the Moon.
+
+#GreatMoonHoax #WeirdHistory #History #DidYouKnow #HistoryShorts #Shorts
+PIN: how it started 👀 on my profile
+
+=== Aug 16 · Ep.17 P1 (War of the Worlds) — 51 views ===
+TITLE: A Radio Play Caused Real Panic in 1938 📻😱
+DESCRIPTION:
+On October 30, 1938, Orson Welles and CBS aired "War of the Worlds" as a series of fake breaking-news bulletins — and listeners who tuned in late thought Martians were actually invading New Jersey. Reports described families fleeing, roads jamming, and police stations flooded with calls, though historians still debate how big the panic really was.
+
+It sounds unbelievable… but the 1938 broadcast panic really happened. And the fallout made one man very famous.
+
+#WarOfTheWorlds #WeirdHistory #History #DidYouKnow #HistoryShorts #Shorts
+PIN: how the government reacted is the crazy part 📻
+
+=== Aug 17 · Ep.17 P2 (Finale) — 35 views ===
+TITLE: The Radio Panic That Made Orson Welles a Star 📻⭐
+DESCRIPTION:
+After the 1938 "War of the Worlds" panic came the fallout: angry listeners, FCC complaints, a famous apology press conference — and then sponsors lining up. The "scandal" turned 23-year-old Orson Welles into a national celebrity, and within a few years Hollywood handed him the keys to make Citizen Kane.
+
+It sounds unbelievable… but a fake Martian invasion launched one of the greatest careers in film history.
+
+#WarOfTheWorlds #WeirdHistory #History #DidYouKnow #HistoryShorts #Shorts
+PIN: how it started 👀 on my profile
+
+⚠️ Aug 15 · "He Invented a Sport. It Killed Him at 39" — 294 views
+NOT in our content queue. Once you tell me which real event this is, I'll write
+its backfill block the same way.

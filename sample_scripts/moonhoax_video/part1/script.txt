@@ -1,0 +1,30 @@
+EPISODE 16 — Great Moon Hoax (1835) (planned 2 parts, clipart)
+PART 1: "The Newspaper That Found Moon People" — SCRIPT LOCKED Aug 13 (voice-gated: build
+ONLY when the house default TTS voice tool is available — user rule; no substitutes).
+OUT_BASE: The_Newspaper_That_Found_Moon_People_Part1
+CONFIG for build_TEMPLATE copy: PART_NUM=1, FINAL=False, BADGE=True ("PART 1"),
+TITLE_LINES=['THE NEWSPAPER THAT','FOUND MOON PEOPLE'], GAPS tail 1.2, no end card,
+cliffhanger cut on beat 8.
+SCENE NOTES (write anim_part.py from these; white bg, CAP_CHUNK=2, ASR sync auto):
+1. NYC street: newsboy waving paper, big headline "LIFE ON THE MOON", giant full moon top.
+2. Sun newsroom: Locke at candle-lit desk writing, ink pot, stacked papers ("THE SUN").
+3. Cape observatory: Herschel figure + HUGE brass telescope aimed at the moon, stars.
+4. Moon surface: craters, lunar forest silhouettes, sapphire river, bat-men gliding
+   (wings spread, horned heads).
+5. Bat-people temple columns, grazing unicorn by a crater, upright beavers outside huts.
+6. The craze: printing press pumping papers, paper stacks, crowd reaching up.
+7. "MOON MISSION FUND": collection jar/plate, coins dropping, missionary with outstretched arms.
+8. CLIFFHANGER: rival editor at desk, magnifying glass over the Sun article, giant "?" —
+   dark moon looming in window.
+BEATS (VO text, read exactly):
+1. August 1835. New York City is reading the strangest headline ever printed, there is life on the Moon. And everyone believes it.
+2. The story comes from the New York Sun, a tiny penny paper, and a reporter named Richard Adams Locke, who claims it's all genuine science.
+3. According to the Sun, the famous astronomer Sir John Herschel has built a giant new telescope, powerful enough to watch the Moon like a nature documentary.
+4. Day after day, the paper prints his discoveries, lunar forests, sapphire rivers, and then, the creatures. Horned, bat-winged, moon men.
+5. The articles describe the bat-people building temples, unicorns grazing by craters, and beavers that walk upright and live in huts.
+6. New York loses its mind. The Sun becomes the best-selling newspaper on the planet, and every rival paper scrambles to reprint the moon news.
+7. Excited readers even start raising money, some want to send missionaries, to civilize the moon people.
+8. But one rival editor starts asking a dangerous question. Where exactly is this famous report, and why has nobody else seen the telescope?
+P2 (later, finale, NOT scripted yet): rival papers demand proof → the "report" never existed
+→ Locke's hoax unravels → Sun never properly retracts, keeps the readers → Herschel's
+reaction → end card "THE GREAT MOON HOAX — 1835", badge "FINAL PART 2".

@@ -1,0 +1,31 @@
+🏭 FACTORY PATCH — read VIDEO_FACTORY_PROMPT.md again; it has been updated with new
+mandatory rules. Summary of what changed and what you must do NOW:
+
+1. WORKSPACE BUDGET (root cause of the last crash): the workspace caps at ~128 MB /
+   ~10,000 files and SILENTLY DROPS files past that. The wilson_video build left frames/,
+   segs/ and qc/ folders on disk — that's why 977 files were lost mid-session.
+   From now on: the MOMENT a part's final mp4 passes QC, delete that part's frames/,
+   segs*/, and QC images. Keep per part ONLY: final .mp4, anim/build .py, vo*.mp3,
+   upload.txt, recap.mp4 (until the series ends).
+
+2. RECOVER RIGHT NOW: Don't restart anything. Do exactly this:
+   a. List wilson_video/part1, part2, part3 — check which FINAL .mp4 files exist and
+      probe each with ffprobe (need h264 1080x1920 + AAC, duration ≤49.9s).
+   b. Delete every frames/, segs*/, qc/ folder and any loose PNG the moment you've
+      confirmed the mp4s are intact.
+   c. If part3's final mp4 is missing or broken: re-run ONLY its build (vo files and
+      anim file should still exist — reuse them), then QC it.
+   d. Present the finished parts + upload blocks as usual.
+
+3. BUILDER: never free-style a build script. Copy /home/user/build_TEMPLATE.py, edit the
+   CONFIG block only. Paths pointing into old episode folders (war335_video, karansebes_video)
+   were wrong — those folders don't exist on this account; trust ONLY kit files.
+
+4. TTS BUDGET: max ~10 speech clips per turn → ONE part per turn. I will say "continue"
+   for the next part.
+
+5. If "AI service is busy" appears again: files persist. Resume exactly where you stopped —
+   check what exists, re-run only the missing step. Never replan a finished part.
+
+6. TOPICS: produce only what I send (queue number, "Title: ...", or a full script).
+   Never invent a topic.

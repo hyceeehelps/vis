@@ -1,0 +1,25 @@
+EPISODE 15 — The Great Stink of 1858 (2-part series, clipart)
+PART 2 (FINALE): "The Smell That Saved London" → The_Smell_That_Saved_London_Part2.mp4
+BADGE: FINAL PART 2 · END CARD: THE GREAT STINK / — 1858 — (ink-on-light) · RECAP: P1 tail
+5s · GAPS tail 1.8 · CAP_CHUNK 2 · ASR-synced captions (vosk)
+VOICE: edge-tts en-US-ChristopherNeural (default voice tool was offline Aug 13) —
+✅ USER APPROVED as-is (Aug 13, voice-gate rule). To rebuild this part for any reason:
+regenerate vo1–8 from BEATS below (use the HOUSE default voice if available, never another
+substitute), re-author anim scenes from SCENES notes, re-run build_TEMPLATE.txt with
+CONFIG: PART_NUM=2, FINAL=True, RECAP_SRC=../part1/<P1 mp4>, GAPS tail 1.8, BADGE=True.
+SCENES: 1 clock tower + fleeing crowned Queen + murk · 2 Bazalgette (gold sash) + plan
+sheet at drafting table · 3 "INTERCEPTORS" diagram: city stubs, red-X blocked sewers,
+long pipe arrow · 4 trench dig + "300,000,000 BRICKS" big text + pickaxe workers ·
+5 16-year worksite: derricks, half wall, brick carriers, sun · 6 clean Thames: embankment
+railing, smiling figures, sparkle water, stink puff leaving · 7 "TODAY" skyline + London
+Eye + dark tunnel cross-section with flow + green check · 8 closer: Bazalgette by clean
+river + sun/birds — end-card zone y350–700 kept CLEAR.
+BEATS:
+1. July 1858. The Thames is an open sewer, Parliament is choking, and the Queen just fled her own boat. London must act, or run.
+2. So the government hands the job to a quiet engineer named Joseph Bazalgette, and tells him to make the stink disappear.
+3. His plan is outrageous. Intercept every sewer before it reaches the Thames, and carry the waste miles downstream, through brand-new tunnels.
+4. Eighty-two miles of brick-lined sewers, dug entirely by hand, with more than three hundred million bricks.
+5. For sixteen years, London is one giant construction site, streets ripped open, the biggest engineering project the city has ever seen.
+6. And when it finally opens, the miracle happens. The stink fades, and the cholera outbreaks that killed tens of thousands simply stop.
+7. Bazalgette's sewers still run under London today, more than a hundred and sixty years later, carrying everything the city flushes.
+8. So if London now smells like rain, and not a toilet, thank the man who buried the problem. And yes, this actually happened.
