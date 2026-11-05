@@ -1,0 +1,32 @@
+TC1 — Lindsay Clancy case SPECIAL (FINALE)
+PART 2: "The Trial That Could Not Decide" — BUILT + QC PASSED Sept 6, 2026.
+Final: The_Trial_That_Could_Not_Decide_Part2.mp4 (49.83s, h264 1080x1920@30, aac 44.1k)
+Voice: en-US-GuyNeural. Captions: ASR per word (vosk), 2-word. Badge: FINAL PART 2.
+End card (MEMORIAL, black ink on white): CORA, DAWSON & CALLAN / — 2023 —
+CONFIG: OUT_BASE=The_Trial_That_Could_Not_Decide_Part2, PART_NUM=2, FINAL=True, BADGE=True,
+ENDCARD_LINES=['CORA, DAWSON & CALLAN','— 2023 —'], RECAP_SRC=../part1/...Part1.mp4 (5.00s),
+GAPS tail 1.8. natural=70.59s rate=1.619 final=49.82s. Same somber-treatment rules as P1.
+SCENE NOTES:
+1. Courtroom bench + witness box + 2 flags, '5 WEEKS' / '~80 WITNESSES', EVIDENCE docket.
+2. Two expert docs: '"FRANKLY PSYCHOTIC"' (navy, defense) vs '"NO PSYCHOSIS FOUND"' (red,
+   prosecution), near-balanced scale, 'one verdict needed'.
+3. docs 'PREMEDITATED' w/ 3 red check ticks ('she knew') vs 'A DISEASE A DEFECT' ('"not guilty"'),
+   brain doodle 'one mind', tilted scale.
+4. 'AUGUST 27 / 9 + 3' jury box: 2 benches, 12 seat cards (9 dark outlines + 3 grey), door '→'.
+5. Big clock w/ ANIMATED hands (f-driven — first render forgot f=, fixed); '23 HOURS'; jury-room
+   door w/ floor crack, note '"WE CANNOT AGREE"' sliding in.
+6. 'KEEP TRYING.' order + gavel; returned note '"WITH A HEAVY HEART…"' 2nd note; 'SEPT 2 → SEPT 3'.
+7. Docket stamped red 'MISTRIAL / SEPT 4, 2026'; arrows to 3 doors 'RETRY'/'PLEA'/'DISMISS';
+   'NEXT: SEPT 29'.
+8. CLOSER: 3 candles, names line at y1150 'Cora · Dawson · Callan' (moved clear of captions),
+   faint star dots; y350-700 EMPTY for memorial end card.
+BEATS (VO exactly):
+1. The trial runs five weeks in Plymouth, with nearly eighty witnesses, and two armies of experts tell opposite stories about one mind.
+2. Defense psychiatrists testify she was frankly psychotic, compelled by a voice. Prosecution experts call it depression, without psychosis.
+3. The state points to planning, proof she knew right from wrong. The defense answers, no sane mother does this.
+4. On August 27th, closing arguments end, and nine women and three men file out to decide.
+5. Twenty three hours of debate behind one door, across four days. Then a note reaches the judge, the jury is deadlocked.
+6. He orders them to keep trying. Two days later the note comes back, with a heavy heart, they cannot agree.
+7. On September 4th, 2026, the judge declares a mistrial. Prosecutors now weigh a retrial, a plea, or dismissal, with the next hearing September 29th.
+8. Three children are gone, and the hardest question is still unanswered, what happened inside one broken mind. For now, the courtroom simply waits.
+SERIES COMPLETE Sept 6, 2026 (P1 49.53s + P2 49.83s). Non-queue special; registry = TC1 P1/P2.

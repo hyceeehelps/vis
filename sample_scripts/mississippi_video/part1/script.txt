@@ -1,0 +1,38 @@
+EPISODE 20 — The Mississippi Bubble (Paris 1715–1720) (2 parts, clipart)
+PART 1: "The Bubble That Invented the Millionaire" — BUILT + QC PASSED Aug 19, 2026.
+Final: The_Bubble_That_Invented_the_Millionaire_Part1.mp4 (49.37s, h264 1080x1920@30, aac 44.1k)
+Voice: en-US-GuyNeural (stand-in of RECORD). Captions: ASR per word (vosk), 2-word. Badge: PART 1. No end card.
+CONFIG: OUT_BASE=The_Bubble_That_Invented_the_Millionaire_Part1, PART_NUM=1, FINAL=False, BADGE=True,
+TITLE_LINES=['THE BUBBLE THAT INVENTED','THE MILLIONAIRE'], GAPS tail 1.2. natural=71.90s rate=1.482.
+SCENE NOTES (rebuild):
+1. Paris church tower + houses, EMPTY barrel, red 'BANKRUPT'; gambler Law (green, cool, hand-wig) +
+   suitcase + 3 floating 'A' cards bobbing on sine. Title zone y330-540 clear.
+2. 'BANQUE' sign; WANTED poster (face disk + wig + crossed swords); Law points w/ LIVRES note to
+   Regent (navy, tricorne, gold trim, arms up-down).
+3. 'PRINT!' dark press box + crank + handle; 6 LIVRES notes flying right (modulo drift); tall note
+   stack; 3 cheering figures (bob).
+4. Parchment LOUISIANA blob w/ 3 gold bursts + small ship drawn ON the map (classic map gag);
+   dotted whisper trail; 2 leaning whisperers w/ '?' above.
+5. Chart 500 -> 18,000 red rocket + gold burst tip; 3 celebrators + one holding sign
+   'MILLIONAIRE (new word!)'.
+6. 'RENT: 1 BACK' — jammed crowd w/ share notes; hunchback (lean + hump disk on back) center,
+   writer pointing/writing on hump, gold coin handoff.
+7. 'RICHER THAN THE KING* / *on paper' — pink-skirt duchess (skirt wpoly under person) pointing at
+   share; servant-lord (navy, gold trim, bob); crowned Law sits atop 4-note stack (zigzag crown).
+8. CLIFF: BANQUE facade w/ sweating clerk; Prince de Conti (purple, flat, wig) pointing;
+   'GOLD, PLEASE.'; three GOLD-labeled wagon barrels w/ wheels; 3 small bystanders w/ '?';
+   '. . .' top, held to tail.
+BEATS (VO exactly):
+1. Paris, 1715. France is bankrupt from war, and a smooth-talking Scottish gambler arrives with a dangerous idea, paper money.
+2. John Law is a math genius and a card shark, wanted for killing a man in a duel. The Regent of France lets him open a bank anyway.
+3. His trick, the bank prints notes backed by confidence instead of gold. France loves it, and the economy roars back to life.
+4. Then Law merges his bank with the Mississippi Company, owner of all trade with Louisiana, and whispers spread, there is gold everywhere.
+5. In 1719, the shares go from five hundred livres to eighteen thousand. Paris invents a brand new word, the millionaire.
+6. The street outside his office becomes a human casino. A hunchback famously rents out his own back as a desk for signing share papers.
+7. Duchesses fight for shares, servants turn into lords, and Law becomes richer than the king himself. On paper, anyway.
+8. Then one morning, the Prince de Conti arrives with three wagons, demanding real gold for his paper notes. And everyone starts wondering.
+P2 (finale, NOT built): RECAP_SRC=../part1/The_Bubble_That_Invented_the_Millionaire_Part1.mp4,
+PART_NUM=2, FINAL=True, badge 'FINAL PART 2', ENDCARD_LINES=['THE MISSISSIPPI BUBBLE','— 1720 —'],
+GAPS tail 1.8. Beats: wagons keep coming → bank run → 'no more gold' promises break → 18,000→crash
+→ Law flees France in disguise → France swears off banks ('banque' dirty word for generations) →
+closer 'And yes, this actually happened.' Keep last scene y~350-700 clear.

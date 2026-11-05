@@ -1,0 +1,32 @@
+EPISODE 19 — The South Sea Bubble (FINALE, clipart)
+PART 2: "The Madness of People" — BUILT + QC PASSED Aug 19, 2026.
+Final: The_Madness_of_People_Part2.mp4 (49.90s, h264 1080x1920@30, aac 44.1k)
+Voice: en-US-GuyNeural (stand-in of RECORD, user-picked Aug 19).
+Captions: ASR-aligned per word (vosk), 2-word chunks. Badge: FINAL PART 2. End card clean.
+CONFIG used: OUT_BASE=The_Madness_of_People_Part2, PART_NUM=2, FINAL=True, BADGE=True,
+ENDCARD_LINES=['THE SOUTH SEA BUBBLE','— 1720 —'], ENDCARD_LIGHT_TEXT=False,
+RECAP_SRC=../part1/The_Bubble_That_Tricked_the_Smartest_Man_Alive_Part1.mp4 (5.00s recap of P1
+insiders/Newton cliff tail), GAPS tail 1.8. natural=72.48s rate=1.662 final=49.88s.
+SCENE NOTES (rebuild source):
+1. Red 'SELL!' + 5 panicking sellers (angry/open, bob) at brown counter, £ papers drifting.
+2. Chart: red cliff £1,000 -> '£100' w/ '−90%'; two sad holders arms-up; gold coins falling off bottom.
+3. '− £20,000' red top; Newton green+wag sad lean, gold coins w/ wing lines fly off right slowly;
+   white thought bubble 'MOTION OF / PLANETS: OK / PEOPLE: ???' (red); apple on ground.
+4. 'FURY!' + 5 angry crowd bobbing arms-up; two torches = brown stick wline + fire().
+5. 'THE TOWER': grey wall rect, 2 sad men INSIDE drawn BEFORE 5 vertical dark bars (layering!);
+   'SEIZED' barrel + coin spill right.
+6. Walpole dark coat+wig tricorne 'PM #1', pointing at big paper w/ red stitch seam + gold needle, 'FIXED'.
+7. burlap sack 'DIRECTORS' w/ 3 green squiggle snakes escaping (snake() zigzag wline helper);
+   angry MP points; 'THAMES??' + red 'NO.' w/ arrow.
+8. CLOSER — stone plaque 'EST. 1720' (keep y350-700 EMPTY for end card); single gold coin;
+   £ IOU blowing left (linear drift, no modulo); lone apple.
+BEATS (VO exactly):
+1. September, 1720. The selling starts quietly, then the price slips, and suddenly everyone wants out at the same time.
+2. The stock collapses from a thousand pounds back to a hundred, in weeks. Fortunes made of paper simply vanish overnight.
+3. Isaac Newton loses twenty thousand pounds, millions in today's money. His verdict, he can calculate the motion of heavenly bodies, but not the madness of people.
+4. London erupts. Ruined investors riot in the streets, and Parliament is forced to investigate how an entire nation got scammed.
+5. The company's directors are rounded up, and their estates are seized to repay investors. Some of them are sent to the Tower of London.
+6. A calm fixer named Robert Walpole pieces the finances back together, and quietly becomes Britain's first real prime minister.
+7. One furious MP suggests sewing the directors into sacks with snakes, and dumping them in the Thames. Parliament politely declines.
+8. The South Sea Bubble becomes the byword for every get-rich-quick mania since. And yes, this actually happened.
+SERIES COMPLETE Aug 19, 2026 (P1 49.33s + P2 49.90s). Next: queue #20 or flavor jump #21/#34/#70.

@@ -1,0 +1,35 @@
+EPISODE 19 — The South Sea Bubble (1711–1720 London) (2 parts, clipart)
+PART 1: "The Bubble That Tricked the Smartest Man Alive" — BUILT + QC PASSED Aug 19, 2026.
+Final: The_Bubble_That_Tricked_the_Smartest_Man_Alive_Part1.mp4 (49.33s, h264 1080x1920@30, aac 44.1k)
+Voice: en-US-GuyNeural (edge-tts stand-in of RECORD, user-picked Aug 19 — house TTS tool absent this session).
+Captions: ASR-aligned per word (vosk), 2-word chunks. Badge: PART 1 (amber pill). No end card (non-final).
+CONFIG used: OUT_BASE=The_Bubble_That_Tricked_the_Smartest_Man_Alive_Part1, PART_NUM=1,
+FINAL=False, BADGE=True, TITLE_LINES=['THE BUBBLE THAT TRICKED','THE SMARTEST MAN ALIVE'],
+GAPS tail 1.2, no recap. natural=70.20s rate=1.447 final=49.30s.
+SCENE NOTES (rebuild: restore anim_part.py from these beats + engine helpers):
+1. London skyline (boxes + dome), falling £ IOU papers, worried navy man tricorne arms-up face-sad,
+   red 'WAR DEBT' — y330-540 kept clear for title card.
+2. 'SOUTH SEA Co.' sign, gold-trim man hands 'MONOPOLY' scroll to navy man, DEBT barrel w/ £ papers.
+3. sea(), tiny 1-mast ship + red '1 SHIP / YEAR' + arrow; Spain man (red/gold, tricorne, point, flat) + 'ONE.' on tan land strip.
+4. Red 'SHARES!', company man behind brown counter arms-up w/ S-papers; 3 customers front arms-up w/ gold coins.
+5. Big chart board: red line 128→1,000 w/ gold burst, '£128'/'£1,000'; 4 swooning tricorne MPs (lean, arms-up); red '!'.
+6. Raining gold coins, 4-person crowd (green/navy/purple/brown, arms-up, bob), 'BUBBLE Co.' sign 'purpose: ???'.
+7. Newton: green coat trim gold, 'cool' face, point+hip; wig = 3 grey disks hand-drawn (no wig hat in engine);
+   coin stacks 3 vs 6; white '2×' thought bubble; red apple + green stem + '!'.
+8. CLIFF: '. . .' top; chart rises black then RED dip at end; 2 dark 'cool' insiders sneaking w/ £ sacks;
+   Newton green+wag arms-up w/ coins dives back in. Held to tail.
+BEATS (VO text, read exactly):
+1. London, 1711. Britain is drowning in war debt, so the government bets the whole country on one shiny new company.
+2. The South Sea Company gets a monopoly on all trade with South America, and quietly swallows the national debt.
+3. One tiny problem, Spain owns South America, and allows exactly one British ship a year. The golden trade is basically imaginary.
+4. But nobody reads the fine print. The company sells shares to the public, promising mountains of debt will become mountains of gold.
+5. In 1720, it offers to take over the entire national debt. Parliament swoons, and the stock rockets from 128 pounds to a thousand.
+6. London goes mad. Lords, maids and porters all pile in, and copycat companies float shares for purposes nobody may know.
+7. Even Isaac Newton buys in, doubles his money, and cashes out. The smartest man alive just beat the market.
+8. But the insiders are quietly selling. Then Newton dives back in at the very top, right before everything falls apart.
+P2 (finale, NOT built yet): RECAP_SRC=../part1/The_Bubble_That_Tricked_the_Smartest_Man_Alive_Part1.mp4
+(-sseof -5.0), PART_NUM=2, FINAL=True, badge 'FINAL PART 2', GAPS tail 1.8,
+ENDCARD_LINES=['THE SOUTH SEA BUBBLE','— 1720 —']; beats: price slips → full crash September 1720
+→ Newton loses £20,000 ("calculate the motion of heavenly bodies…") → fury/riots, directors' estates
+seized, Walpole restores order → bubbles pop, joint-stock jokes → closer "And yes, this actually happened."
+Keep last scene y~350-700 clear for end card.

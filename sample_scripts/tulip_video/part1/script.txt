@@ -1,0 +1,36 @@
+EPISODE 18 — Tulip Mania (1630s Netherlands) (planned 2 parts, clipart)
+PART 1: "The Flower That Cost More Than a House" — SCRIPT LOCKED Aug 19 (voice-gated:
+build ONLY when the house default TTS voice tool is available — user rule; no substitutes).
+OUT_BASE: The_Flower_That_Cost_More_Than_a_House_Part1
+CONFIG for build_TEMPLATE copy: PART_NUM=1, FINAL=False, BADGE=True ("PART 1"),
+TITLE_LINES=['THE FLOWER THAT COST','MORE THAN A HOUSE'], GAPS tail 1.2, no end card,
+cliffhanger cut on beat 8 (silent auction room).
+SCENE NOTES (write anim_part.py from these; white bg, CAP_CHUNK=2, ASR sync auto):
+1. Amsterdam skyline: gabled canal houses (stepped roofs), one MANSION vs one tiny tulip
+   in a pot, price-tag "=" between them, big "1636" stencil.
+2. Ottoman ship arriving: crescent flag, crates of bulbs, noble in ruff collar accepting
+   one like a jewel; garden row of plain tulips, one spotlighted.
+3. Close-up giant "broken" tulip: cream petals with red flame stripes (wavy wpoly stripes),
+   sparkles; tiny squiggly ghost-bug doodle with "?" (the unknown virus).
+4. Tavern: wooden table, mugs (barrel shape), three small-figures (weaver/baker/sweep)
+   waving paper slips with tulip doodles; papers flying like confetti.
+5. "WIND TRADE" scene: paper slips swirling on curved wind lines; below ground cross-
+   section a single bulb in soil with a string up to a "?".
+6. The Semper Augustus scale: grand canal house LEFT vs one striped tulip under glass
+   dome RIGHT; big text "5,500 GUILDERS"; coin stack.
+7. Dock: sailor with striped shirt biting a bulb (+ herring on plate), onion basket beside;
+   behind him merchant with hands on head; faint jail-bars shadow over sailor, "?" .
+8. CLIFFHANGER auction: auctioneer at podium with one tulip in pot, arm raised; crowd of
+   bidders all holding paddles DOWN, faces flat; huge empty space + one big "…".
+BEATS (VO text, read exactly):
+1. Holland, 1636. One single flower bulb sells for the price of a mansion. And somehow, everyone thinks that makes sense.
+2. Tulips arrive from Turkey as a luxury for the rich. The rarer the colors, the more status a garden brings.
+3. The most desired are "broken" tulips, petals with wild flame stripes, caused, it turns out, by a virus. Nobody knows that yet.
+4. Weavers, bakers, chimney sweeps, everyone starts buying. By 1636, people are trading bulbs they will never even see, in taverns, over drinks.
+5. This is the "wind trade", buying and selling pieces of paper, promises for a flower still in the ground. Prices double in weeks, then in days.
+6. One rare bulb, the Semper Augustus, reportedly sells for five and a half thousand guilders, enough to buy a grand house on Amsterdam's finest canal.
+7. One sailor famously eats a priceless bulb with his herring, thinking it is an onion. It lands him in jail, while the market hits absolute madness.
+8. Everyone is rich on paper. But in February 1637, at one ordinary auction, the auctioneer opens the bidding, and the room goes silent. Nobody bids.
+P2 (later, finale, NOT scripted yet): panic selling over days → prices collapse to onions-level
+→ contracts nobody can pay → taverns full of paper millionaires ruined → historians still
+argue how deep the damage went → end card "TULIP MANIA — 1637", badge "FINAL PART 2".

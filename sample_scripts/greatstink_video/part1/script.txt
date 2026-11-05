@@ -1,0 +1,19 @@
+EPISODE 15 — The Great Stink of 1858 (2-part series, clipart)
+PART 1: "The Smell That Stopped Parliament" → The_Smell_That_Stopped_Parliament_Part1.mp4
+BADGE: PART 1 · no end card (cliffhanger cut) · CAP_CHUNK 2 · ASR-synced captions
+VOICE: house default voice (voice-00 session, Aug 12)
+SCENES: 1 murk sewer-city + stink clouds · 2 privies + "2,500,000 PEOPLE" · 3 flush toilet
++ heatwave sun · 4 baked river + "THE GREAT STINK" + flies · 5 clock tower panic ·
+6 lime-soaked curtains + LIME barrel · 7 Queen's aborted cruise (crown + dashed turn-back
+arrow + "ABORT!") · 8 building + looming dark stink cloud + "?"
+HELPERS lived in anim_part.py (deleted per Retention v2): stink_cloud, stink_curl, murk,
+privy, crown — same helpers re-shipped in Ep.15 P2 script.txt scene notes; engine has the rest.
+BEATS:
+1. In the summer of 1858, London smelled so bad that people believed the air itself could kill.
+2. By then, two and a half million Londoners flushed everything into the Thames, and the river had quietly become an open sewer.
+3. Flush toilets were the new fashion, so more waste poured in every day. Then June arrived, with a brutal heatwave.
+4. The river baked and bubbled. A brown fog of stench rolled over the city, and newspapers gave it a name: the Great Stink.
+5. Ordinary people covered their noses and carried on. But the brand-new Houses of Parliament sat right on the riverbank, and there was no escape.
+6. Desperate officials draped the windows in curtains soaked with lime. Some MPs threatened to abandon the building entirely.
+7. Even Queen Victoria tried a pleasure cruise on the Thames. Legend says she retreated within minutes.
+8. The government of the largest empire on Earth, defeated by a smell. But the Great Stink was about to do what decades of debate never could.
