@@ -17,6 +17,11 @@ and never re-rendering something that passed QC. **≈10 calls, ~6–8 min per p
    Every later anim file this session is written from memory + the SAMPLE_anim_part.py pattern.
 
 ## THE BUILD LOOP (per part)
+3a. 🔴 CAST CHECK (first part of every episode): open `cast_defs.py` and make sure EVERY named
+   character in this script already exists. Missing → add one `define()` line, then run
+   `python3 cast_sheet.py` (view the sheet) + `python3 test_cast.py` (must print "all checks
+   passed"). **Never draw a recurring character with raw `person()`** — that is how characters
+   drift between scenes. Extras only: `villager`, `villager2`, `crowd`.
 3. write_file — `<slug>_video/part<N>/anim_part.py` **in one shot**: 8 scene functions + `SCENES`,
    `NIGHT`, `BEATS` (BEATS = the VO text `.split()` word lists; captions + amber keyword auto-burn).
    **Always set `CAP_CHUNK = 2` at the top** (2-word phrase captions = house default since Aug 12;
@@ -24,6 +29,7 @@ and never re-rendering something that passed QC. **≈10 calls, ~6–8 min per p
    (vosk model → /tmp, pip first build of the session) — captions ride real word timestamps,
    highlight tracks the spoken word; `captions: ASR-aligned per word (vosk)` in build output =
    working; `weighted fallback` = ASR failed, still fine to ship.
+   Characters: `char(d, 'name', x, y, size, f=f, pose='argue')` — never `person()` for a named role.
    Scene rules: white bg (navy only if night); groundline ~y1500–1650; int RGB only; motion via `f`/`t`;
    part 1 scene 1 keeps y≈0.22H clear (title card lands there);
    final part's LAST scene keeps y≈350–700 clear (end card lands at 0.26H, black ink on light).

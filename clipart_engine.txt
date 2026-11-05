@@ -42,11 +42,26 @@ def disk(d, cx, cy, r, fill, outline=INK, w=6, wob=1.8, seed=0, f=0, ry=0):
 
 # ---------------------------------------------------------------- figures ----
 _FACE = {'smile': 0, 'open': 1, 'flat': 2, 'sad': 3}
+# Validated vocabularies: an unknown value raises instead of drawing nothing.
+# ('wig' used to fall through every hat branch -> a bald "Newton" shipped in Ep.19.)
+HATS = {None, 'tricorne', 'shako', 'fez', 'furcap', 'turban', 'tophat', 'wig', 'bonnet', 'cap'}
+FACES = {None, 'smile', 'open', 'flat', 'sad', 'angry', 'cool', 'smug', 'worried'}
+ARMS = {None, 'down', 'up', 'point', 'hip', 'fist', 'musket'}
+LEGS = {None, 'stand', 'walk', 'none'}
 
 def person(d, x, y, s, body=(250, 248, 244), skin=(255, 255, 255), f=0, seed=1,
            lean=0.0, face='smile', hat=None, hatcol=(30, 32, 36),
            arms=('down', 'down'), legs='stand', trim=None, bob=0.0):
     """Blob-body clipart figure. y = foot level. s = height scale (~150)."""
+    if hat not in HATS:
+        raise ValueError(f'person(): unknown hat {hat!r} — known: {sorted(h for h in HATS if h)}')
+    if face not in FACES:
+        raise ValueError(f'person(): unknown face {face!r} — known: {sorted(f for f in FACES if f)}')
+    for a in arms:
+        if a not in ARMS:
+            raise ValueError(f'person(): unknown arm {a!r} — known: {sorted(a for a in ARMS if a)}')
+    if legs not in LEGS:
+        raise ValueError(f'person(): unknown legs {legs!r} — known: {sorted(l for l in LEGS if l)}')
     r = _rng(f, seed)
     y += bob * s * 0.03
     hip_y, sh_y = y - 0.44 * s, y - 0.98 * s
@@ -104,12 +119,12 @@ def person(d, x, y, s, body=(250, 248, 244), skin=(255, 255, 255), f=0, seed=1,
     eo = 0.115 * s
     if face == 'cool':
         for sgn in (-1, 1):
-            d.rounded_rectangle([ex + sgn * eo - 0.085 * s, ey - 0.09 * s,
-                                 ex + sgn * eo + 0.085 * s, ey + 0.03 * s],
-                                radius=int(0.03 * s), fill=(36, 38, 42), outline=INK,
-                                width=max(2, int(s * 0.018)))
-        wline(d, (ex - eo, ey - 0.03 * s), (ex + eo, ey - 0.03 * s),
-              w=max(2, int(s * 0.018)), wob=0.6, seed=seed + 12, f=f)
+            d.rounded_rectangle([ex + sgn * eo - 0.062 * s, ey - 0.065 * s,
+                                 ex + sgn * eo + 0.062 * s, ey + 0.005 * s],
+                                radius=int(0.022 * s), fill=(36, 38, 42), outline=INK,
+                                width=max(2, int(s * 0.014)))
+        wline(d, (ex - 0.055 * s, ey - 0.030 * s), (ex + 0.055 * s, ey - 0.030 * s),
+              w=max(2, int(s * 0.014)), wob=0.4, seed=seed + 12, f=f)   # bridge
     else:
         for sgn in (-1, 1):
             if face == 'sad':
@@ -132,6 +147,21 @@ def person(d, x, y, s, body=(250, 248, 244), skin=(255, 255, 255), f=0, seed=1,
     elif face == 'sad':
         pts = [(ex - 0.09 * s, ey + 0.19 * s), (ex, ey + 0.11 * s), (ex + 0.09 * s, ey + 0.19 * s)]
         d.line(_jit(pts, 0.8, r), fill=INK, width=max(3, int(s * 0.02)), joint='curve')
+    elif face == 'smug':      # one-sided smirk
+        pts = [(ex - 0.08 * s, ey + 0.14 * s), (ex + 0.02 * s, ey + 0.18 * s),
+               (ex + 0.10 * s, ey + 0.10 * s)]
+        d.line(_jit(pts, 0.8, r), fill=INK, width=max(3, int(s * 0.02)), joint='curve')
+        for sgn in (-1, 1):   # half-lidded eyes
+            wline(d, (ex + sgn * eo - 0.05 * s, ey - 0.06 * s),
+                  (ex + sgn * eo + 0.05 * s, ey - 0.04 * s),
+                  w=max(3, int(s * 0.022)), wob=0.6, seed=seed + 19 + sgn, f=f)
+    elif face == 'worried':
+        pts = [(ex - 0.09 * s, ey + 0.18 * s), (ex, ey + 0.12 * s), (ex + 0.09 * s, ey + 0.18 * s)]
+        d.line(_jit(pts, 0.8, r), fill=INK, width=max(3, int(s * 0.02)), joint='curve')
+        for sgn in (-1, 1):   # raised inner brows
+            wline(d, (ex + sgn * eo - sgn * 0.02 * s, ey - 0.16 * s),
+                  (ex + sgn * eo + sgn * 0.07 * s, ey - 0.20 * s),
+                  w=max(3, int(s * 0.02)), wob=0.8, seed=seed + 21 + sgn, f=f)
     else:  # smile
         pts = [(ex - 0.10 * s, ey + 0.10 * s), (ex, ey + 0.17 * s), (ex + 0.10 * s, ey + 0.10 * s)]
         d.line(_jit(pts, 0.8, r), fill=INK, width=max(3, int(s * 0.02)), joint='curve')
@@ -156,6 +186,45 @@ def person(d, x, y, s, body=(250, 248, 244), skin=(255, 255, 255), f=0, seed=1,
     elif hat == 'furcap':
         disk(d, ex, ey - 0.34 * s, 0.24 * s, (96, 84, 74), INK, max(4, int(s * 0.04)),
              1.4, seed + 26, f, ry=0.16 * s)
+    elif hat == 'tophat':
+        wpoly(d, [(ex - 0.26 * s, ey - 0.29 * s), (ex + 0.26 * s, ey - 0.29 * s),
+                  (ex + 0.26 * s, ey - 0.36 * s), (ex - 0.26 * s, ey - 0.36 * s)],
+              hatcol, INK, max(4, int(s * 0.04)), 1.4, seed + 30, f)          # brim
+        wpoly(d, [(ex - 0.18 * s, ey - 0.36 * s), (ex + 0.18 * s, ey - 0.36 * s),
+                  (ex + 0.16 * s, ey - 0.86 * s), (ex - 0.16 * s, ey - 0.86 * s)],
+              hatcol, INK, max(4, int(s * 0.04)), 1.4, seed + 31, f)          # crown
+        wline(d, (ex - 0.18 * s, ey - 0.50 * s), (ex + 0.18 * s, ey - 0.50 * s),
+              w=max(4, int(s * 0.035)), col=(178, 44, 48), wob=0.8, seed=seed + 32, f=f)
+    elif hat == 'wig':
+        # full-bottomed wig: curls at the sides + a crown band that stays OFF the face
+        for sgn in (-1, 1):
+            for k in range(3):
+                disk(d, ex + sgn * (0.35 + 0.035 * k) * s, ey + (0.02 + 0.16 * k) * s,
+                     0.115 * s, hatcol, INK, max(3, int(s * 0.028)), 1.6,
+                     seed + 34 + sgn * 3 + k, f)
+            disk(d, ex + sgn * 0.31 * s, ey - 0.13 * s, 0.125 * s, hatcol, INK,
+                 max(3, int(s * 0.028)), 1.6, seed + 38 + sgn, f)
+        disk(d, ex, ey - 0.40 * s, 0.31 * s, hatcol, INK, max(4, int(s * 0.035)),
+             1.8, seed + 40, f, ry=0.155 * s)                                  # crown
+        wline(d, (ex - 0.19 * s, ey - 0.30 * s), (ex + 0.19 * s, ey - 0.30 * s),
+              w=max(3, int(s * 0.024)), col=hatcol, wob=1.0, seed=seed + 41, f=f)
+    elif hat == 'bonnet':
+        disk(d, ex, ey - 0.36 * s, 0.34 * s, hatcol, INK, max(4, int(s * 0.04)),
+             1.8, seed + 42, f, ry=0.22 * s)
+        wline(d, (ex - 0.33 * s, ey - 0.235 * s), (ex + 0.33 * s, ey - 0.235 * s),
+              w=max(3, int(s * 0.026)), col=(238, 232, 214), wob=1.0, seed=seed + 43, f=f)
+        for sgn in (-1, 1):   # ribbons
+            wline(d, (ex + sgn * 0.30 * s, ey - 0.20 * s),
+                  (ex + sgn * 0.36 * s, ey + 0.06 * s),
+                  w=max(2, int(s * 0.02)), col=(238, 232, 214), wob=0.8,
+                  seed=seed + 44 + sgn, f=f)
+        disk(d, ex + 0.26 * s, ey - 0.46 * s, 0.05 * s, (200, 60, 60), INK,
+             max(2, int(s * 0.016)), 0.8, seed + 46, f)
+    elif hat == 'cap':
+        disk(d, ex, ey - 0.33 * s, 0.28 * s, hatcol, INK, max(4, int(s * 0.04)),
+             1.6, seed + 45, f, ry=0.15 * s)
+        wline(d, (ex - 0.24 * s, ey - 0.30 * s), (ex + 0.40 * s, ey - 0.27 * s),
+              w=max(4, int(s * 0.034)), col=hatcol, wob=1.0, seed=seed + 46, f=f)  # peak
     elif hat == 'turban':
         disk(d, ex, ey - 0.32 * s, 0.27 * s, (242, 240, 234), INK, max(4, int(s * 0.04)),
              1.6, seed + 27, f, ry=0.16 * s)

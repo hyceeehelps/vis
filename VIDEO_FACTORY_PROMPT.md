@@ -59,6 +59,14 @@ Show me the script briefly, then proceed WITHOUT waiting.
 
 === STEP 2 — GENERATE ASSETS (do in parallel) ===
 🏆 DEFAULT = CLIPART ANIMATION MODE (Experiment #3 winner, user-declared house style Aug 10 — use UNLESS the user asks for another style):
+CAST (stable characters, Aug 2026 rule): recurring figures are declared ONCE in
+  `/home/user/cast_defs.py` and drawn with `char(d, 'name', x, y, size, f=f, pose='…')` from
+  `/home/user/cast_engine.py`. Scenes may vary ONLY pose/face/position/size — body, skin, hat,
+  hatcol, seed and trim are locked (changing them raises CastError). Same character in every scene
+  and every episode, no re-invention. New name → one `define()` line in cast_defs.py +
+  `python3 cast_sheet.py` (view it) + `python3 test_cast.py` (all pass). Unknown hat/face raises
+  instead of drawing nothing. Only one-shot extras (`villager`, `villager2`, `crowd`) may use
+  `person()`. Full guide: CAST_GUIDE.md.
 Voiceover: 1 TTS clip per beat (vo1.mp3…voN.mp3), text read EXACTLY; replace "…" with commas.
   If moderation blocks a clip, soften the wording (no gore/violence specifics) and retry.
   TTS budget: the speech tool allows ~10 calls per turn → produce ONE part per turn
@@ -257,7 +265,7 @@ print('ALL DONE')
 ## 🧰 OPS RULES (restored accounts & long sessions)
 
 - **Only trust files that SHIP IN THE KIT**: `clipart_engine.py`, `build_TEMPLATE.py`,
-  `SAMPLE_anim_part.py`, this prompt, the archive. Episode folders are disposable — never
+  `cast_engine.py`, `cast_defs.py`, `SAMPLE_anim_part.py`, this prompt, the archive. Episode folders are disposable — never
   build logic around a path from a previous episode.
 - **Renders take 2–4 min per part — that's normal.** Don't kill/restart a running build.
 - **"AI service is busy" / cut-off turn**: nothing is lost — files persist on disk. On the

@@ -11,6 +11,10 @@ Upload everything as-is, then tell the receiving agent: **"convert the uploaded 
 | `clipart_engine.txt` | The animation engine → agent restores it as `/home/user/clipart_engine.py`. |
 | `build_TEMPLATE.txt` | Universal builder → restore as `/home/user/build_TEMPLATE.py`. Copy into each `episode_slug/partN/` folder, edit CONFIG, run. **This is the ONLY builder — episode-folder builders get purged.** |
 | `SAMPLE_anim_part.txt` | A real, working scene file (335 Years' War P1) — reference for writing new ones. |
+| `cast_engine.txt` | Stable-cast layer → restore as `/home/user/cast_engine.py`. `char(d,'name',…)` draws a declared character; identity is locked, only pose/face/position vary. |
+| `cast_defs.txt` | The channel's cast list → `/home/user/cast_defs.py`. One `define()` per recurring character (colours, hat, seed). |
+| `cast_sheet.txt` | QC tool → `/home/user/cast_sheet.py`. `python3 cast_sheet.py` renders every cast member for a drift check. |
+| `test_cast.txt` | Anti-drift tests → `/home/user/test_cast.py`. Must print "all checks passed" before a build. |
 | `align_vo.txt` | Caption-sync module → restore as `/home/user/align_vo.py`. The builder auto-calls it: it ASR-listens to each vo clip (small Vosk model, auto-downloads to /tmp — NOT the workspace) and gives captions TRUE per-word sync. If it fails, builders fall back to the weighted estimator — builds never break. |
 | `RESCUE_MESSAGE.txt` | Paste-ready recovery + rules block — use it if a session crashes or before the very first build, your call. |
 | `historyclipart_style_ref.jpg` | The look we're riffing on (optional style calibration reference). |

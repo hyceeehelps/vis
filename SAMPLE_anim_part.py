@@ -1,10 +1,18 @@
-"""Ep.12 Part 1/3: The 335 Years' War -- declaration scenes (1651), clipart mode."""
+"""Ep.12 Part 1/3: The 335 Years' War -- declaration scenes (1651), clipart mode.
+
+CAST RULE (Aug 2026): any character that appears more than once — or should look the
+same next episode — is declared ONCE in /home/user/cast_defs.py and drawn with
+    char(d, 'name', x, y, size, f=f, pose='point', face='flat')
+Only one-shot background extras may use person() directly.
+"""
 import sys, math
 sys.path.insert(0, '/home/user')
 from PIL import ImageFont
 from clipart_engine import (W, H, INK, person, barrel, tent, fire, bottle, flag,
                             river, moon, stars, burst, groundline, wline, disk,
                             wpoly, horse, cannon, sea, ship, island, gull)
+# STABLE CAST: recurring characters come from cast_defs.py, never raw person() calls.
+from cast_engine import char
 
 TXTF = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 DUTCH = ((216, 62, 62), (250, 250, 248), (72, 92, 170))
@@ -55,15 +63,13 @@ def s4(d, f, n, t):
 def s5(d, f, n, t):
     sea(d, 1700, 260, f, 740)
     wpoly(d, [(520, 1490), (W, 1460), (W, H), (520, H)], (116, 152, 94), INK, 5, 2.2, 741, f)
-    person(d, 580, 1500, 185, (74, 62, 54), f=f, seed=742, hat='tricorne',
-           arms=('point', 'down'), trim=(240, 196, 60), face='flat')
+    char(d, 'merchant', 580, 1500, 185, f=f, pose='point', face='flat')
     sx, sy = 580 + 0.88 * 185, 1500 - 0.98 * 185 - 0.05 * 185
     d.rectangle([sx, sy - 42, sx + 62, sy + 22], fill=(250, 248, 240), outline=INK, width=4)
     for k in range(3):
         d.line([(sx + 8, sy - 30 + k * 16), (sx + 54, sy - 30 + k * 16)],
                fill=(150, 148, 144), width=3)
-    person(d, 880, 1510, 175, (146, 114, 80), f=f, seed=743, hat='furcap',
-           arms=('hip', 'down'), face='flat')
+    char(d, 'merchant2', 880, 1510, 175, f=f, pose='point', face='flat')
     text(d, 880, 1010, 'NO', 115)
 
 # S6 - Tromp arrives -------------------------------------------------------------------------
@@ -72,8 +78,7 @@ def s6(d, f, n, t):
     ship(d, 150, 1445, 108, f, 751, hull=(110, 82, 56), sailcol=(236, 234, 226))
     ship(d, 470, 1500, 185, f, 752, bands=DUTCH)
     ship(d, 900, 1435, 108, f, 753, hull=(110, 82, 56), sailcol=(236, 234, 226))
-    person(d, 470, 1399, 60, (58, 58, 64), f=f, seed=754, hat='tricorne',
-           arms=('point', 'down'), face='flat')
+    char(d, 'admiral', 470, 1399, 60, f=f, pose='point', face='flat')
 
 # S7 - braced for a fight --------------------------------------------------------------------
 def s7(d, f, n, t):

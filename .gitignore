@@ -24,3 +24,14 @@ sample_merge/frames/
 sample_merge/qc/
 sample_merge/silent.mp4
 silent.mp4
+
+# --- cast demo: keep the sample render + strip, ignore render scratch ---
+cast_demo/frames/
+cast_demo/qc/
+cast_demo/seg_*.mp4
+cast_demo/base.mp4
+cast_demo/list.txt
+cast_demo/vo*.mp3
+cast_demo/title.png
+cast_demo/badge.png
+cast_demo/endcard.png
